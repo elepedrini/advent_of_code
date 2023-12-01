@@ -5,9 +5,9 @@ SRC := src
 # -----------------------------------------------------------------------------
 .PHONY: all install run deploy down mypy fmt fmtcheck lint
 
-all:  install run
+all: install run
 
-install: 
+install:
 	pip install --upgrade pip
 	pip install poetry
 	poetry install
