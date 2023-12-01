@@ -1,5 +1,5 @@
-# advent_of_code_2023
-My 2023 Advent of code solutions
+# Advent of code 2023
+My 2023 Advent of code solutions.
 
 ## Installation
 - Prerequisites: Docker, Git
