@@ -1,3 +1,7 @@
+# import os
+# _current_dir = os.path.dirname(os.path.abspath(__file__))
+# _root_dir = os.path.join(_current_dir, "../../")
+# os.chdir(_root_dir)
 # from src.config import CONFIG
 
 
