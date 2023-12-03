@@ -10,6 +10,7 @@ python = "^3.10"
 pydantic = "^2.5.2"
 regex = "^2023.10.3"
 envyaml = "^1.10.211231"
+numpy = "^1.26.2"
 
 [tool.poetry.group.dev.dependencies]
 pre-commit = "^3.5.0"

@@ -26,7 +26,7 @@ def get_max_occurrences(line: str) -> Tuple[int]:
     )
 
 
-def part1(fn: str = "day02_p1.txt") -> int:
+def part1(fn: str = "day02.txt") -> int:
     f = open(CONFIG["data_dir"] + fn)
     res = 0
     max_allowed = (12, 13, 14)  # R G B
@@ -39,7 +39,7 @@ def part1(fn: str = "day02_p1.txt") -> int:
     return res
 
 
-def part2(fn: str = "day02_p1.txt") -> int:
+def part2(fn: str = "day02.txt") -> int:
     f = open(CONFIG["data_dir"] + fn)
     res = 0
 
