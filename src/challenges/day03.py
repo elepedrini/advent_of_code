@@ -44,11 +44,6 @@ def get_numbers_map(data: List[str]) -> NumbersMap:
     for i in range(len(data)):
         line = data[i]
         map_numbers_in_line = [
-            (int(n.group()), i, n.span())
-            # find all numbers in a row
-            for n in re.finditer(r"\d+", line.strip())
-        ]
-        map_numbers_in_line = [
             NumbersMapItem(
                 id=uuid4(),
                 number=int(n.group()),
