@@ -8,10 +8,7 @@ from src.config import CONFIG
 
 HANDS_TYPE_MAP = {
     "five-of-a-kind": (7, {5: 1}),  # 1 card appears 5 times
-    "four-of-a-kind": (
-        6,
-        {4: 1, 1: 1},
-    ),  # 1 card appears 4 times and 1 card appears once
+    "four-of-a-kind": (6, {4: 1, 1: 1}),  # 1 card appears 4 times; 1 card appears once
     "full-house": (5, {3: 1, 2: 1}),
     "three-of-a-kind": (4, {3: 1, 1: 2}),
     "two-pair": (3, {2: 2, 1: 1}),
