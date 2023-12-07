@@ -28,7 +28,7 @@ class Hand(BaseModel):
 def get_card_count_map(hand: str, part: int) -> collections.Counter:
     c = Counter(hand)
     if part == 2:
-        card_max = max(c, key=c.get)
+        card_max = max((key for key in c if key != "J"), key=c.get, default=5)
         if "J" in c and card_max != "J":
             c[card_max] += c["J"]  # add J to the highest count
             c.pop("J")
@@ -108,4 +108,4 @@ def part2(fn: str = "day07.txt") -> int:
 
 if __name__ == "__main__":
     print("Part 1: ", part1())  # 249483956
-    print("Part 2: ", part2())
+    print("Part 2: ", part2())  # 252137472
