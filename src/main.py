@@ -10,7 +10,7 @@ day_n = int(
 lib_name = f"day{day_n:02d}"
 
 # dynamically import the module
-module = importlib.import_module(f"challenges.{lib_name}")
+module = importlib.import_module(f"puzzles_2023.{lib_name}")
 
 # use getattr to dynamically import the part1 function from the module
 day_fun_p1 = getattr(module, "part1")
